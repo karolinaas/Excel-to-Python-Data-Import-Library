@@ -1,16 +1,26 @@
 import numpy as np
 from openpyxl import load_workbook
 
-def import_data_column(filename: str, sheetname:str, row_pos: int, col_pos: int , number_of_rows: int):
-    """
+def import_data_column(filename: str, sheetname: str, row_pos: int, col_pos: int , number_of_rows: int):
+    """ Return imported data
     Import a specified number of rows from a single column from an Excel spreadsheet and return their contents as an Numpy array.
-    
-    :param filename: Filename, including .xlsx extension
-    :param sheetname: Name of the sheet where data is located
-    :param row_pos: Number of the row where the first cell to be imported is located
-    :param col_pos: Number of the column where the first cell to be imported is located
-    :param number_of_rows: Number of rows (cells in a column) to be imported
-    :return: Numpy array of imported data
+
+    Parameters
+    ------------
+        filename: str
+            Filename, including .xlsx extension. Absolute path can also be used.
+        sheetname: str
+            Name of the sheet where data is located
+        row_pos: int
+            Number of the row where the first cell to be imported is located.
+        col_pos: int
+            Number of the column where the first cell to be imported is located.
+        number_of_rows: int
+            Number of rows (cells in a column) to be imported.
+    Return
+    -----------
+        data : ndarray
+            Numpy array of imported data. 
     """
 
     # Open a workbook (file) and the specified worksheet
