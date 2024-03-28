@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "excel-to-python-data-import-library"
+version = "0.0.1"
+authors = [
+  { name="Šebestová", email=":p" },
+]
+description = "A small personal library containing functions that I frequently use to import data from Excel spreadsheets"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/karolinaas/Excel-to-Python-Data-Import-Library"
