@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 name = "excel-to-python-data-import-library"
 version = "0.0.1"
 authors = [
-  { name="Šebestová", email=":p" },
+  { name="Šebestová", email="author@example.com" },
 ]
 description = "A small personal library containing functions that I frequently use to import data from Excel spreadsheets"
 readme = "README.md"
