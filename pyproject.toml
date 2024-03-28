@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "excel-to-python-data-import-library"
+name = "excel_data_import"
 version = "0.0.1"
 authors = [
   { name="Šebestová", email="author@example.com" },

@@ -22,7 +22,7 @@ def import_data_column(filename: str, sheetname:str, row_pos: int, col_pos: int 
 
     # Iterate over the specified rows in the worksheet and load its values into Numpy array
     i = 0
-    for row in ws.iter_rows(min_row=row_pos, max_row=row_pos+number_of_rows, min_col=col_pos, max_col=col_pos, values_only=True):
+    for row in ws.iter_rows(min_row=row_pos, max_row=row_pos+number_of_rows-1, min_col=col_pos, max_col=col_pos, values_only=True):
         for value in row:
             data[i] = value
             i += 1
